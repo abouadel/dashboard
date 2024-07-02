@@ -1,0 +1,175 @@
+*{
+    font-family: 'Noto Kufi Arabic';
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+  }
+
+body{
+    direction: rtl;
+    background: #000;
+    display: flex;
+}
+
+.menu{
+    background-color: #123;
+    width: 65px;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.menu:hover{
+    width: 260px;
+}
+
+.profile{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+h2{
+    font-size: 15px;
+}
+
+.img-box, img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 2px solid white;
+    flex-shrink: 0;
+}
+
+.img-box{
+    border-radius: 50%;
+}
+
+ul{
+    height: 95%;
+    list-style: none;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.menu ul li a{
+    display: block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 40px;
+    margin: 10px 0;
+    padding: 8px 5px;
+    border-radius: 8px;
+}
+
+.menu ul li a:hover, .active, .card:hover, td:hover{
+    background: #ffffff55;
+    cursor: pointer;
+}
+
+.logout{
+    background: red;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+
+}
+
+.fa-solid{
+    font-size: 28px;
+}
+
+.main{
+    width: 100%;
+}
+
+.title-bar{
+    background: rgb(18, 109, 199);
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cards, .data{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.data{
+    /* border: 1px solid red; */
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.card{
+    background: #123;
+    height: 150px;
+    flex-basis: 150px;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card p, .card .fa-solid{
+    color: white;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td, th{
+    background: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+
+th{
+    background: #0080ff;
+}
+
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.price{
+    background-color: green;
+}
+
+.count{
+    background: gold;
+    color: black;
+}
+
+@media (max-width: 500px)
+{
+    /* body{
+        background: blue;
+    } */
+
+    .menu{
+        height: 100%
+    }
+}
