@@ -81,7 +81,6 @@ ul{
     position: absolute;
     /* bottom: 0; */
     width: 100%;
-
 }
 
 .fa-solid{
@@ -111,9 +110,8 @@ ul{
 }
 
 .data{
-    /* border: 1px solid red; */
-    max-height: 100vh;
-    /*overflow: scroll;*/
+    max-height: 50vh;
+    overflow: scroll;
 }
 
 .card{
