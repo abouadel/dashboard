@@ -113,7 +113,7 @@ ul{
 .data{
     /* border: 1px solid red; */
     max-height: 100vh;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .card{
